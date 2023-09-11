@@ -113,6 +113,8 @@ users)
 
 ## Doc
 
+  * Clarify documentation for `enable` pseudo-variable
+
 ## Security fixes
 
 # API updates
