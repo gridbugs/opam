@@ -492,11 +492,11 @@ the package being defined.
   resolved direct dependencies of the package
 - <a id="pkgvar-installed">`installed`</a>:
   whether the package is installed
-- <a id="pkgvar-enable">`enable`</a>: is not a variable.
-  `pkg1+pkg2+...+pkgN:enable` is syntactic sugar for
-  `pkg1+pkg2+...+pkgN:installed?enable:disable`. That is, it behaves like a
-  variable that takes the value "enable" or "disable" depending on whether the
-  package(s) are installed
+- <a id="pkgvar-enable">`enable`</a>:
+  takes the value "enable" or "disable" depending on whether the package is
+  installed. Used with the combination operator `+`, 
+  `name1+name2+name3:enable` is syntactic sugar for
+  `name1+name2+name3:installed?enable:disable`.
 - <a id="pkgvar-pinned">`pinned`</a>: whether the package is pinned
 - <a id="pkgvar-dirs">`bin`, `sbin`, `lib`, `man`, `doc`, `share`, `etc`</a>:
   the corresponding directories for this package (similar to
