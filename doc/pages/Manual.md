@@ -492,8 +492,8 @@ the package being defined.
   resolved direct dependencies of the package
 - <a id="pkgvar-installed">`installed`</a>:
   whether the package is installed
-- <a id="pkgvar-enable">`enable`</a>:
-  takes the value "enable" or "disable" depending on whether the package is
+- <a id="pkgvar-enable">`enable`</a>: is not a variable.
+  It takes the value "enable" or "disable" depending on whether the package is
   installed. Used with the combination operator `+`, 
   `name1+name2+name3:enable` is syntactic sugar for
   `name1+name2+name3:installed?enable:disable`.
